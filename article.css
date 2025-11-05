@@ -1,0 +1,129 @@
+.subpage body {
+  padding-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .subpage body {
+    padding-top: 1rem;
+  }
+}
+
+.subpage #logo {
+  min-width: 300px;
+}
+
+.subpage #bg {
+  animation: none;
+}
+
+@media screen and (min-width: 1000px) {
+  .subpage main {
+    grid-template-columns: 1fr;
+  }
+}
+
+.subpage header, .subpage main {
+  animation: none;
+}
+
+.subpage header h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .subpage header h1 {
+    font-size: 5rem;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .subpage header h1 {
+    font-size: 8rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .subpage header h1 {
+    font-size: 10rem;
+  }
+}
+
+.subpage section {
+  background: #ffffffa0;
+  max-width: 80ch;
+  margin: 1rem 0 0;
+}
+
+.article {
+  font-size: 1.1rem;
+  padding: 1rem;
+  grid-column: span 6;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .article {
+    padding: 2rem;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .article {
+    font-size: 1.3rem;
+  }
+}
+
+.article p {
+  margin: 2rem 0;
+}
+
+.article a {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.article img {
+  border: solid 1px #0001;
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.article img + img {
+  margin-top: 1.25rem;
+}
+
+blockquote {
+  border-left: solid .5rem #0001;
+  font-size: 0.9em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 1rem;
+}
+
+.article__title {
+  margin: 0 0 1rem;
+  font-size: 2.5rem;
+}
+
+img.article__image {
+  margin-top: 2rem;
+}
+
+.article-links {
+  margin: 1rem 0 0;
+  padding: 0 0 0 1ch;
+  list-style-type: none;
+}
+
+.article-links__item {
+  display: block;
+  text-indent: -1ch;
+}
+
+.article-links__item:before {
+  content: ' / ';
+  opacity: 0.3;
+}
