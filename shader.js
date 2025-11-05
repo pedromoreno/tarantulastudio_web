@@ -1,4 +1,4 @@
-const ASPECT_DIM = innerWidth > innerHeight ? 'y' : 'x';
+const ASPECT_DIM = (typeof window !== 'undefined' && window.innerWidth > window.innerHeight) ? 'y' : 'x';
 
 const RAND_X = (Math.random() * 3).toFixed(2);
 const RAND_Y = (Math.random() * 3).toFixed(2);
