@@ -1,7 +1,12 @@
-import fragmentShaderSource from './shader.js';
-import { createRenderer } from './glsl-sandbox.js';
+// Efecto de fondo desactivado temporalmente
+// import fragmentShaderSource from './shader.js';
+// import { createRenderer } from './glsl-sandbox.js';
 
 function initBackground() {
+  // Desactivado temporalmente
+  return;
+  
+  /* 
   try {
     const { canvas, draw } = createRenderer(fragmentShaderSource);
 
@@ -29,6 +34,7 @@ function initBackground() {
     console.error('Error initializing background:', error);
     // Continue without background animation - site should still work
   }
+  */
 }
 
 function initCanvas(canvas, draw, headStart) {
@@ -69,8 +75,8 @@ function initCanvas(canvas, draw, headStart) {
   requestAnimationFrame(animate);
 }
 
-// Initialize when module loads
-initBackground();
+// Initialize when module loads - DESACTIVADO TEMPORALMENTE
+// initBackground();
 
 export const startAnimating = () => {
   // Already started in initBackground
