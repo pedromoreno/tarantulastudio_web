@@ -78,7 +78,7 @@ header h1 {
   word-break: break-word;
 }
 
-header h1 br {
+header h1 .title-break {
   display: block;
 }
 
@@ -91,10 +91,11 @@ header h1 br {
     text-align: left;
     font-size: 5rem;
     margin: 1rem 0 1rem;
+    white-space: nowrap;
   }
   
-  header h1 br {
-    display: none;
+  header h1 .title-break {
+    display: inline;
   }
 }
 
@@ -106,6 +107,7 @@ header h1 br {
   header h1 {
     font-size: 8rem;
     line-height: 1;
+    white-space: nowrap;
   }
 }
 
