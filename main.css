@@ -69,6 +69,10 @@ body::after {
   }
 }
 
+header {
+  width: 100%;
+}
+
 header h1 {
   mix-blend-mode: color-burn;
   font-size: 4rem;
@@ -76,6 +80,7 @@ header h1 {
   margin: 1rem 0 2rem;
   line-height: 0.9;
   word-break: break-word;
+  width: 100%;
 }
 
 header h1 .title-break {
@@ -89,9 +94,11 @@ header h1 .title-break {
 @media screen and (min-width: 768px) {
   header h1 {
     text-align: left;
-    font-size: 5rem;
+    font-size: clamp(5rem, 8vw, 12rem);
     margin: 1rem 0 1rem;
     white-space: nowrap;
+    width: 100%;
+    letter-spacing: -0.05ch;
   }
   
   header h1 .title-break {
@@ -105,9 +112,11 @@ header h1 .title-break {
   }
 
   header h1 {
-    font-size: 8rem;
+    font-size: clamp(8rem, 12vw, 16rem);
     line-height: 1;
     white-space: nowrap;
+    width: 100%;
+    letter-spacing: -0.05ch;
   }
 }
 
@@ -117,7 +126,9 @@ header h1 .title-break {
   }
 
   header h1 {
-    font-size: 10rem;
+    font-size: clamp(10rem, 15vw, 20rem);
+    width: 100%;
+    letter-spacing: -0.05ch;
   }
 }
 
